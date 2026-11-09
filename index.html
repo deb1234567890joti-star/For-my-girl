@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dabbu ❤️ Kuchi</title>
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #200018, #65002e, #210018);
+    font-family: Georgia, serif;
+    color: white;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+.container {
+    padding: 45px 20px;
+}
+
+h1 {
+    font-size: 38px;
+    color: #ffb6d5;
+    margin-bottom: 15px;
+    text-shadow: 0 0 15px #ff4d94;
+}
+
+.subtitle {
+    font-size: 17px;
+    color: #ffd5e6;
+    margin-bottom: 35px;
+    line-height: 1.7;
+}
+
+.heart {
+    font-size: 45px;
+    animation: heartbeat 1.5s infinite;
+    margin: 20px;
+}
+
+@keyframes heartbeat {
+    50% {
+        transform: scale(1.25);
+    }
+}
+
+.card {
+    max-width: 340px;
+    margin: auto;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 30px #ff4d94;
+    background: #fff;
+}
+
+.card img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Scratch cover */
+
+#reveal {
+    display: none;
+}
+
+.scratch {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        135deg,
+        #d9b6c7,
+        #fff0f5,
+        #c58ca9,
+        #ffe1ed
+    );
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: #65002e;
+    cursor: pointer;
+    transition: opacity 1s ease;
+}
+
+.scratch span {
+    font-size: 65px;
+}
+
+.scratch p {
+    font-size: 19px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.scratch small {
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+/* Reveal */
+
+#reveal:checked + .scratch {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.message {
+    margin: 35px auto;
+    max-width: 340px;
+    padding: 25px;
+    border: 1px solid #ff8fbd;
+    border-radius: 20px;
+    background: rgba(255,255,255,0.08);
+    line-height: 1.9;
+}
+
+.message h2 {
+    color: #ffb6d5;
+    margin-bottom: 15px;
+}
+
+.footer {
+    margin-top: 35px;
+    color: #ffc2dc;
+    font-size: 16px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Dabbu ❤️ Kuchi</h1>
+
+    <div class="heart">💗</div>
+
+    <p class="subtitle">
+        Some feelings are too beautiful<br>
+        to be expressed in words...
+        <br><br>
+        So, Kuchi, here's a little surprise for you.
+    </p>
+
+    <div class="card">
+
+        <!-- CHANGE THIS IMAGE LINK -->
+        <img src="her-photo.jpg" alt="Kuchi">
+
+        <input type="checkbox" id="reveal">
+
+        <label for="reveal" class="scratch">
+            <span>💌</span>
+            <p>A Little Surprise</p>
+            <small>Tap here to reveal your surprise</small>
+        </label>
+
+    </div>
+
+    <div class="message">
+
+        <h2>Dear Kuchi ❤️</h2>
+
+        <p>
+            I am very lucky to have you in my life.
+            You make ordinary moments feel special
+            and bring happiness into my world.
+            <br><br>
+            No matter how many words I write,
+            they will never be enough to describe
+            how special you are to me.
+            <br><br>
+            With lots of love,
+            <br>
+            <b>Yours, Dabbu ❤️</b>
+        </p>
+
+    </div>
+
+    <div class="footer">
+        Made with ❤️ by Dabbu, just for Kuchi.
+    </div>
+
+</div>
+
+</body>
+</html>
